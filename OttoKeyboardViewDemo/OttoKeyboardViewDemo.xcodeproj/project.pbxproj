@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186DEF352019ABA70051E2CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF342019ABA70051E2CC /* AppDelegate.m */; };
+		186DEF382019ABA70051E2CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF372019ABA70051E2CC /* ViewController.m */; };
+		186DEF3B2019ABA70051E2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF392019ABA70051E2CC /* Main.storyboard */; };
+		186DEF3D2019ABA70051E2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF3C2019ABA70051E2CC /* Assets.xcassets */; };
+		186DEF402019ABA70051E2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF3E2019ABA70051E2CC /* LaunchScreen.storyboard */; };
+		186DEF432019ABA70051E2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF422019ABA70051E2CC /* main.m */; };
+		186DEF562019ABDA0051E2CC /* KeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */; };
+		186DEF572019ABDA0051E2CC /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF4D2019ABDA0051E2CC /* KeyboardView.m */; };
+		186DEF582019ABDA0051E2CC /* OttoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF502019ABDA0051E2CC /* OttoTextField.m */; };
+		186DEF592019ABDA0051E2CC /* OttoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF522019ABDA0051E2CC /* OttoTextView.m */; };
+		186DEF5A2019ABDA0051E2CC /* keyboard_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */; };
+		186DEF5B2019ABDA0051E2CC /* keyboard_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		186DEF302019ABA70051E2CC /* OttoKeyboardViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OttoKeyboardViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186DEF332019ABA70051E2CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		186DEF342019ABA70051E2CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		186DEF362019ABA70051E2CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		186DEF372019ABA70051E2CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		186DEF3A2019ABA70051E2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		186DEF3C2019ABA70051E2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186DEF3F2019ABA70051E2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186DEF412019ABA70051E2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186DEF422019ABA70051E2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186DEF4A2019ABDA0051E2CC /* KeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardButton.h; sourceTree = "<group>"; };
+		186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardButton.m; sourceTree = "<group>"; };
+		186DEF4C2019ABDA0051E2CC /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		186DEF4D2019ABDA0051E2CC /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		186DEF4E2019ABDA0051E2CC /* OttoKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoKeyboardView.h; sourceTree = "<group>"; };
+		186DEF4F2019ABDA0051E2CC /* OttoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoTextField.h; sourceTree = "<group>"; };
+		186DEF502019ABDA0051E2CC /* OttoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OttoTextField.m; sourceTree = "<group>"; };
+		186DEF512019ABDA0051E2CC /* OttoTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoTextView.h; sourceTree = "<group>"; };
+		186DEF522019ABDA0051E2CC /* OttoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OttoTextView.m; sourceTree = "<group>"; };
+		186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete@2x.png"; sourceTree = "<group>"; };
+		186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186DEF2D2019ABA70051E2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186DEF272019ABA70051E2CC = {
+			isa = PBXGroup;
+			children = (
+				186DEF492019ABDA0051E2CC /* OttoKeyboardView */,
+				186DEF322019ABA70051E2CC /* OttoKeyboardViewDemo */,
+				186DEF312019ABA70051E2CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		186DEF312019ABA70051E2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				186DEF302019ABA70051E2CC /* OttoKeyboardViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		186DEF322019ABA70051E2CC /* OttoKeyboardViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				186DEF332019ABA70051E2CC /* AppDelegate.h */,
+				186DEF342019ABA70051E2CC /* AppDelegate.m */,
+				186DEF362019ABA70051E2CC /* ViewController.h */,
+				186DEF372019ABA70051E2CC /* ViewController.m */,
+				186DEF392019ABA70051E2CC /* Main.storyboard */,
+				186DEF3C2019ABA70051E2CC /* Assets.xcassets */,
+				186DEF3E2019ABA70051E2CC /* LaunchScreen.storyboard */,
+				186DEF412019ABA70051E2CC /* Info.plist */,
+				186DEF422019ABA70051E2CC /* main.m */,
+			);
+			path = OttoKeyboardViewDemo;
+			sourceTree = "<group>";
+		};
+		186DEF492019ABDA0051E2CC /* OttoKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				186DEF4A2019ABDA0051E2CC /* KeyboardButton.h */,
+				186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */,
+				186DEF4C2019ABDA0051E2CC /* KeyboardView.h */,
+				186DEF4D2019ABDA0051E2CC /* KeyboardView.m */,
+				186DEF4E2019ABDA0051E2CC /* OttoKeyboardView.h */,
+				186DEF4F2019ABDA0051E2CC /* OttoTextField.h */,
+				186DEF502019ABDA0051E2CC /* OttoTextField.m */,
+				186DEF512019ABDA0051E2CC /* OttoTextView.h */,
+				186DEF522019ABDA0051E2CC /* OttoTextView.m */,
+				186DEF532019ABDA0051E2CC /* Resource */,
+			);
+			path = OttoKeyboardView;
+			sourceTree = "<group>";
+		};
+		186DEF532019ABDA0051E2CC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */,
+				186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		186DEF2F2019ABA70051E2CC /* OttoKeyboardViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186DEF462019ABA70051E2CC /* Build configuration list for PBXNativeTarget "OttoKeyboardViewDemo" */;
+			buildPhases = (
+				186DEF2C2019ABA70051E2CC /* Sources */,
+				186DEF2D2019ABA70051E2CC /* Frameworks */,
+				186DEF2E2019ABA70051E2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OttoKeyboardViewDemo;
+			productName = OttoKeyboardViewDemo;
+			productReference = 186DEF302019ABA70051E2CC /* OttoKeyboardViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		186DEF282019ABA70051E2CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = otto;
+				TargetAttributes = {
+					186DEF2F2019ABA70051E2CC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 186DEF2B2019ABA70051E2CC /* Build configuration list for PBXProject "OttoKeyboardViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186DEF272019ABA70051E2CC;
+			productRefGroup = 186DEF312019ABA70051E2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				186DEF2F2019ABA70051E2CC /* OttoKeyboardViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		186DEF2E2019ABA70051E2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186DEF402019ABA70051E2CC /* LaunchScreen.storyboard in Resources */,
+				186DEF5B2019ABDA0051E2CC /* keyboard_delete@3x.png in Resources */,
+				186DEF3D2019ABA70051E2CC /* Assets.xcassets in Resources */,
+				186DEF5A2019ABDA0051E2CC /* keyboard_delete@2x.png in Resources */,
+				186DEF3B2019ABA70051E2CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		186DEF2C2019ABA70051E2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186DEF562019ABDA0051E2CC /* KeyboardButton.m in Sources */,
+				186DEF382019ABA70051E2CC /* ViewController.m in Sources */,
+				186DEF592019ABDA0051E2CC /* OttoTextView.m in Sources */,
+				186DEF572019ABDA0051E2CC /* KeyboardView.m in Sources */,
+				186DEF432019ABA70051E2CC /* main.m in Sources */,
+				186DEF352019ABA70051E2CC /* AppDelegate.m in Sources */,
+				186DEF582019ABDA0051E2CC /* OttoTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		186DEF392019ABA70051E2CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186DEF3A2019ABA70051E2CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		186DEF3E2019ABA70051E2CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186DEF3F2019ABA70051E2CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		186DEF442019ABA70051E2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		186DEF452019ABA70051E2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		186DEF472019ABA70051E2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OttoKeyboardViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otto.OttoKeyboardViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		186DEF482019ABA70051E2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OttoKeyboardViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otto.OttoKeyboardViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186DEF2B2019ABA70051E2CC /* Build configuration list for PBXProject "OttoKeyboardViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186DEF442019ABA70051E2CC /* Debug */,
+				186DEF452019ABA70051E2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186DEF462019ABA70051E2CC /* Build configuration list for PBXNativeTarget "OttoKeyboardViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186DEF472019ABA70051E2CC /* Debug */,
+				186DEF482019ABA70051E2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 186DEF282019ABA70051E2CC /* Project object */;
+}
