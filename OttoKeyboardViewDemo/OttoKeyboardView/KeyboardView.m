@@ -49,11 +49,7 @@
             }
             KeyboardButton * button = [[KeyboardButton alloc] initWithFrame:(CGRect){(index % 5) * (buttonWidth+0.5),top+(index / 5) * 54,buttonWidth,54}];
             button.tag = 1000 + index;
-            if ([self.delegate numberKeyboardType:self] == NumberKeyboardTypeNumber && index == 9) {
-                button.button.enabled = NO;
-                [button.button setTitleColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1] forState:UIControlStateNormal];
-                [button.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xE7E8E9)] forState:UIControlStateNormal];
-            }
+            
             if (index == 15 || index == 18 || index == 19) {
                 button.button.titleLabel.font = [UIFont systemFontOfSize:18.0];
                 switch (index) {
