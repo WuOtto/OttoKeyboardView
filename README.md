@@ -2,14 +2,14 @@
 
 自定义键盘，支持多种样式（数字键盘、小数点键盘、身份证键盘、十六进制数键盘），切合项目需求。支持`UITextField`和`UITextView`。
 
-<figure class="half">
+<figure1 class="half">
     <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView1.png" width="200">
     <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView2.png" width="200">
-</figure>
-<figure class="half">
+</figure1>
+<figure2 class="half">
     <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView3.png" width="200">
     <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView4.png" width="200">
-</figure>
+</figure2>
 
 ### 具体使用  
 
