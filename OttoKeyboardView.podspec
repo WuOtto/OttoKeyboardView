@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OttoKeyboardView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A custom keyboardView on iOS."
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "MIT"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   s.author             = { "WuOtto" => "287969623@qq.com" }
   # Or just: s.author    = "WuOtto"
   # s.authors            = { "WuOtto" => "287969623@qq.com" }
-  # s.social_media_url   = "https://wuotto.github.io/HomePage/"
+  s.social_media_url   = "https://wuotto.github.io/HomePage/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+   s.resources = "OttoKeyboardViewDemo/OttoKeyboardView/Resource/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
