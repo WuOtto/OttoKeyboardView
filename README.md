@@ -6,7 +6,7 @@
 <p align="center">
 <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView1.png" width="200"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView2.png" width="200"/>
+<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView5.png" width="200"/>
 </p>
 
 <p align="center">
