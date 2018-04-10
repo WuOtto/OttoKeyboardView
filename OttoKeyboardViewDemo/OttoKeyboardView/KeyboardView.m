@@ -10,6 +10,9 @@
 #import "KeyboardButton.h"
 #import "OttoKeyboardView.h"
 
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+#define SafeAreaBottomHeight (screenHeight == 812.0 ? 34 : 0)
+
 @interface KeyboardView ()
 
 @property (nonatomic,copy) NSArray *keyboardTitle;
@@ -19,9 +22,9 @@
 @implementation KeyboardView
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:CGRectMake(0, KHeight - 216, KWidth, 216)]) {
+    if (self = [super initWithFrame:frame]) {
         self.backgroundColor = UIColorFrom255RGB(206, 207, 208);
-        self.frame = CGRectMake(0, KHeight - 216, KWidth, 216);
+        self.frame = CGRectMake(0, KHeight - 216 - SafeAreaBottomHeight, KWidth, 216 + SafeAreaBottomHeight);
     }
     return self;
 }
