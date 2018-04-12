@@ -1,6 +1,6 @@
 ## OttoKeyboardView
 
-自定义键盘，支持多种样式（数字键盘、小数点键盘、身份证键盘、十六进制数键盘），切合项目需求。支持`UITextField`和`UITextView`。
+自定义键盘，支持多种样式（数字键盘、小数点键盘、身份证键盘、十六进制数键盘、随机布局的安全数字键盘），切合项目需求。支持`UITextField`和`UITextView`。
 
 
 <p align="center">
