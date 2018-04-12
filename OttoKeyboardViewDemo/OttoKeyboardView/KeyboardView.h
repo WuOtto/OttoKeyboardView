@@ -10,15 +10,18 @@
 
 /** NumberKeyboardType自定义键盘类型
  *
- *  纯数字键盘:NumberKeyboardNumber
- *  小数点键盘:NumberKeyboardDouble
- *  身份证键盘:NumberKeyboardCertNo
+ *  纯数字键盘:      NumberKeyboardNumber
+ *  小数点键盘:      NumberKeyboardDouble
+ *  身份证键盘:      NumberKeyboardCertNo
+ *  十六进制键盘:     NumberKeyboardTypeHEX
+ *  随机数键盘:      NumberKeyboardTypeHEX
  */
 typedef NS_ENUM(NSInteger,NumberKeyboardType) {
     NumberKeyboardTypeNumber = 0,
-    NumberKeyboardTypeDouble = 1,
-    NumberKeyboardTypeCertNo = 2,
-    NumberKeyboardTypeHEX = 3
+    NumberKeyboardTypeDouble,
+    NumberKeyboardTypeCertNo,
+    NumberKeyboardTypeHEX,
+    NumberKeyboardTypeRandom
 };
 
 @protocol KeyboardViewDelegate;

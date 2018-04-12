@@ -20,7 +20,7 @@
         
         self.button = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        self.button.titleLabel.font = [UIFont systemFontOfSize:30];
+        self.button.titleLabel.font = [UIFont systemFontOfSize:28];
         self.button.frame = CGRectMake(0, 0, frame.size.width, frame.size.height -0.5);
         self.button.backgroundColor = [UIColor colorWithRed:231/255.0 green:232/255.0 blue:233/255.0 alpha:1];
         [self.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xf7f7f7)] forState:UIControlStateNormal];

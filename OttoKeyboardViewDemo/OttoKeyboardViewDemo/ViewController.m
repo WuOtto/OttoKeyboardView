@@ -9,13 +9,14 @@
 #import "ViewController.h"
 #import "OttoKeyboardView.h"
 
-@interface ViewController ()<TextViewClickReturnDelegate,TextFieldClickReturnDelegate>
+@interface ViewController ()<TextViewClickReturnDelegate,TextFieldClickReturnDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet OttoTextField *hexTextField;
 @property (nonatomic, strong) OttoTextField *numberTextField;
 @property (nonatomic, strong) OttoTextField *doubleTextField;
 @property (nonatomic, strong) OttoTextField *certNoTextField;
 @property (nonatomic, strong) OttoTextView *hexTextView;
+@property (nonatomic, strong) OttoTextField *randomTextField;
 
 @end
 
@@ -54,11 +55,23 @@
     
     self.hexTextView = [[OttoTextView alloc] initWithFrame:CGRectMake(50, 220, KWidth - 100, 100)];
     self.hexTextView.font = [UIFont systemFontOfSize:20.0];
-    self.hexTextView.backgroundColor = [UIColor yellowColor];
+    self.hexTextView.layer.borderColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1.0f].CGColor;
+    self.hexTextView.layer.borderWidth = 1;
+    self.hexTextView.layer.cornerRadius =5;
     self.hexTextView.textViewClickReturnDelegate = self;
     [self.hexTextView setTextViewKeyboardType:TextViewKeyboardTypeNumber];
     [self.hexTextView setNumberKeyboardType:NumberKeyboardTypeHEX];
     [self.view addSubview:self.hexTextView];
+    
+    self.randomTextField = [[OttoTextField alloc] initWithFrame:CGRectMake(50, 350, CGRectGetWidth(self.view.bounds) - 100, 30)];
+    self.randomTextField.placeholder = @"安全键盘";
+    self.randomTextField.borderStyle = UITextBorderStyleBezel;
+    //    [self.randomTextField setSecureTextEntry:YES];
+    [self.randomTextField setKeyboardType:KeyboardTypeNumber];
+    self.randomTextField.textFieldClickReturnDelegate = self;
+    self.randomTextField.delegate = self;
+    [self.randomTextField setNumberKeyboardType:NumberKeyboardTypeRandom];
+    [self.view addSubview:self.randomTextField];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -72,6 +85,8 @@
             [self.certNoTextField resignFirstResponder];
         } else if (textField == self.hexTextField){
             [self.hexTextField resignFirstResponder];
+        }else if (textField == self.randomTextField){
+            [self.randomTextField resignFirstResponder];
         }
     }
     
@@ -90,6 +105,11 @@
 - (void)textFieldClickReturn:(OttoTextField *)textField{
     [textField resignFirstResponder];
     NSLog(@"return - %@",textField.text);
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    [self.randomTextField setKeyboardType:KeyboardTypeNumber];
+    [self.randomTextField setNumberKeyboardType:NumberKeyboardTypeRandom];
 }
 
 - (void)didReceiveMemoryWarning {

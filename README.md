@@ -15,6 +15,9 @@
 <img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView4.png" width="200"/>
 </p>
 
+安全键盘
+![](http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView6.gif)
+
 ### 具体使用  
 
 在需要用到的地方导入头文件`#import "OttoKeyboardView.h"`  
@@ -31,13 +34,27 @@
     [self.hexTextView setNumberKeyboardType:NumberKeyboardTypeHEX];
 ```
 
+#### 安全键盘的使用注意事项
+如果想要实现每次收起键盘之后再次弹出新的随机布局，那么需要实现`delegate`方法
+```
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+[self.randomTextField setKeyboardType:KeyboardTypeNumber];
+[self.randomTextField setNumberKeyboardType:NumberKeyboardTypeRandom];
+}
+```
+
 ### 安装
-##### 1.CocoaPods安装
+##### 1.使用CocoaPods安装
 ```
 pod 'OttoKeyboardView'
 ```
 
-##### 2.直接将`OttoKeyboardView`文件夹拖到你的工程里面
+##### 2.直接使用，将`OttoKeyboardView`文件夹拖到你的工程里面
+
+### 版本更新记录
+#### v0.0.5
+- 【新增】: 随机布局的安全数字键盘。
+- 【新增】: 删除键增加长按清空功能。
 
 ### 其他
 本库没有导入任何其他的第三方内容，可以放心使用。在使用前，您可以下载查看示例程序
