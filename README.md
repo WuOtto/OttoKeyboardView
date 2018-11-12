@@ -4,19 +4,19 @@
 
 
 <p align="center">
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView1.png" width="200"/>
+<img src="https://raw.githubusercontent.com/WuOtto/imgSrc/master/OttoKeyboardView1.png" width="200"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView5.png" width="200"/>
+<img src="https://raw.githubusercontent.com/WuOtto/imgSrc/master/OttoKeyboardView5.png" width="200"/>
 </p>
 
 <p align="center">
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView3.png" width="200"/>
+<img src="https://raw.githubusercontent.com/WuOtto/imgSrc/master/OttoKeyboardView3.png" width="200"/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView4.png" width="200"/>
+<img src="https://raw.githubusercontent.com/WuOtto/imgSrc/master/OttoKeyboardView4.png" width="200"/>
 </p>
 
 安全键盘
-![](http://ouem5hcj9.bkt.clouddn.com/OttoKeyboardView6.gif)
+![](https://raw.githubusercontent.com/WuOtto/imgSrc/master/OttoKeyboardView6.gif)
 
 ### 具体使用  
 
