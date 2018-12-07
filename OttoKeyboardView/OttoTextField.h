@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger,KeyboardType) {
 
 @property (nonatomic,weak) id <TextFieldClickReturnDelegate> textFieldClickReturnDelegate;
 
-- (void)setKeyboardType1:(KeyboardType)keyboardType;
+- (void)setOttoKeyboardType:(KeyboardType)keyboardType;
 
 @end
 
