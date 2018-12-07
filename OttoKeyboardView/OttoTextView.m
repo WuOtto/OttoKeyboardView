@@ -1,28 +1,27 @@
 //
-//  OttoTextField.m
+//  OttoTextView.m
 //  OttoKeyboardView
 //
 //  Created by otto on 2018/1/24.
 //  Copyright © 2018年 otto. All rights reserved.
 //
 
-#import "OttoTextField.h"
+#import "OttoTextView.h"
 
-@interface OttoTextField ()<KeyboardViewDelegate>
+@interface OttoTextView ()<KeyboardViewDelegate>
 {
     KeyboardView *numberKeyboard;
 }
 @end
 
-@implementation OttoTextField
+@implementation OttoTextView
 
-- (void)awakeFromNib {
+- (void)awakeFromNib{
     [super awakeFromNib];
     numberKeyboard = [[KeyboardView alloc] init];
     self.inputView = numberKeyboard;
     numberKeyboard.delegate = self;
     [numberKeyboard createdKeyboard];
-
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -35,8 +34,8 @@
 #pragma mark - BANumberKeyboardDelegate
 - (BOOL)textFieldShouldDelete:(KeyboardView *)numberKeyboard {
     BOOL canEditor = YES;
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        canEditor = [self.delegate textField:self shouldChangeCharactersInRange:self.selectedRange replacementString:@""];
+    if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+        canEditor = [self.delegate textView:self shouldChangeTextInRange:self.selectedRange replacementText:@""];
     }
     if (canEditor) {
         [self deleteBackward];
@@ -46,8 +45,8 @@
 
 - (void)numberKeyboard:(KeyboardView *)numberKeyboard replacementString:(NSString *)string {
     BOOL canEditor = YES;
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        canEditor = [self.delegate textField:self shouldChangeCharactersInRange:self.selectedRange replacementString:string];
+    if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+        canEditor = [self.delegate textView:self shouldChangeTextInRange:self.selectedRange replacementText:string];
     }
     
     if (canEditor) {
@@ -58,8 +57,8 @@
 /** 点击清除按钮 */
 - (BOOL)textFieldShouldClear:(KeyboardView *)numberKeyboard{
     BOOL canEditor = YES;
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        canEditor = [self.delegate textField:self shouldChangeCharactersInRange:self.selectedRange replacementString:@""];
+    if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+        canEditor = [self.delegate textView:self shouldChangeTextInRange:self.selectedRange replacementText:@""];
     }
     if (canEditor) {
         [self setText:@""];
@@ -69,8 +68,8 @@
 /** 点击空格按钮 */
 - (BOOL)textFieldShouldSpace:(KeyboardView *)numberKeyboard{
     BOOL canEditor = YES;
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        canEditor = [self.delegate textField:self shouldChangeCharactersInRange:self.selectedRange replacementString:@""];
+    if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+        canEditor = [self.delegate textView:self shouldChangeTextInRange:self.selectedRange replacementText:@""];
     }
     if (canEditor) {
         [self insertText:@" "];
@@ -81,23 +80,23 @@
 /** 点击回车按钮 */
 - (BOOL)textFieldShouldReturn:(KeyboardView *)numberKeyboard{
     BOOL canEditor = YES;
-    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
-        canEditor = [self.delegate textField:self shouldChangeCharactersInRange:self.selectedRange replacementString:@""];
+    if ([self.delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
+        canEditor = [self.delegate textView:self shouldChangeTextInRange:self.selectedRange replacementText:@""];
     }
     if (canEditor) {
-        if ([self.textFieldClickReturnDelegate respondsToSelector:@selector(textFieldClickReturn:)]) {
-            [self.textFieldClickReturnDelegate textFieldClickReturn:self];
+        if ([self.textViewClickReturnDelegate respondsToSelector:@selector(textViewClickReturn:)]) {
+            [self.textViewClickReturnDelegate textViewClickReturn:self];
         }
     }
     return canEditor;
 }
 
-- (void)setKeyboardType:(KeyboardType)keyboardType {
+- (void)setOttoKeyboardType:(TextViewKeyboardType)keyboardType {
     switch (keyboardType) {
-        case KeyboardTypeDefault:
+        case TextViewKeyboardTypeDefault:
             self.inputView = nil;
             break;
-        case KeyboardTypeNumber:
+        case TextViewKeyboardTypeNumber:
             self.inputView = numberKeyboard;
             break;
         default:
@@ -116,6 +115,5 @@
 - (NumberKeyboardType)numberKeyboardType:(KeyboardView *)numberKeyboard {
     return self.NumberKeyboardType;
 }
-
 
 @end

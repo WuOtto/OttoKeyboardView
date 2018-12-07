@@ -45,7 +45,8 @@
         for (NSInteger index = 0; index < 20; index ++) {
             if (index == 17) {
                 KeyboardButton * button = [[KeyboardButton alloc] initWithFrame:(CGRect){(11 % 3) * (buttonWidth+0.5),top+(11 / 3) * 54,buttonWidth,54}];
-                [button.button setImage:[UIImage imageNamed:@"keyboard_delete"] forState:UIControlStateNormal];
+                NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+                [button.button setImage:[UIImage imageNamed:@"keyboard_delete.png" inBundle:bundle compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
                 [button.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xE7E8E9)] forState:UIControlStateNormal];
                 [button.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xf7f7f7)] forState:UIControlStateHighlighted];
                 [button.button addTarget:self action:@selector(deleteButtonOnclick:) forControlEvents:UIControlEventTouchUpInside];
@@ -123,7 +124,8 @@
     }
     
     KeyboardButton * button = [[KeyboardButton alloc] initWithFrame:(CGRect){(11 % 3) * (buttonWidth+0.5),top+(11 / 3) * 54,buttonWidth,54}];
-    [button.button setImage:[UIImage imageNamed:@"keyboard_delete"] forState:UIControlStateNormal];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    [button.button setImage:[UIImage imageNamed:@"keyboard_delete.png" inBundle:bundle compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
     [button.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xE7E8E9)] forState:UIControlStateNormal];
     [button.button setBackgroundImage:[KeyboardButton imageColor:UIColorFromHex(0xf7f7f7)] forState:UIControlStateHighlighted];
     [button.button addTarget:self action:@selector(deleteButtonOnclick:) forControlEvents:UIControlEventTouchUpInside];
