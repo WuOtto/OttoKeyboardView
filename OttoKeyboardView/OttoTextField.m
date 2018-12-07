@@ -92,7 +92,7 @@
     return canEditor;
 }
 
-- (void)setKeyboardType:(KeyboardType)keyboardType {
+- (void)setKeyboardType1:(KeyboardType)keyboardType {
     switch (keyboardType) {
         case KeyboardTypeDefault:
             self.inputView = nil;

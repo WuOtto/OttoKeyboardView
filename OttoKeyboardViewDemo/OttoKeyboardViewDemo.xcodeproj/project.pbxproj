@@ -13,15 +13,11 @@
 		186DEF3D2019ABA70051E2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF3C2019ABA70051E2CC /* Assets.xcassets */; };
 		186DEF402019ABA70051E2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF3E2019ABA70051E2CC /* LaunchScreen.storyboard */; };
 		186DEF432019ABA70051E2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF422019ABA70051E2CC /* main.m */; };
-		186DEF562019ABDA0051E2CC /* KeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */; };
-		186DEF572019ABDA0051E2CC /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF4D2019ABDA0051E2CC /* KeyboardView.m */; };
-		186DEF582019ABDA0051E2CC /* OttoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF502019ABDA0051E2CC /* OttoTextField.m */; };
-		186DEF592019ABDA0051E2CC /* OttoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DEF522019ABDA0051E2CC /* OttoTextView.m */; };
-		186DEF5A2019ABDA0051E2CC /* keyboard_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */; };
-		186DEF5B2019ABDA0051E2CC /* keyboard_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */; };
+		B38C0D912ACA7937ADCC7AD3 /* Pods_OttoKeyboardViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577364BBB0CD626E635E545A /* Pods_OttoKeyboardViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06391D2C146781F4DE13B94E /* Pods-OttoKeyboardViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttoKeyboardViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OttoKeyboardViewDemo/Pods-OttoKeyboardViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		186DEF302019ABA70051E2CC /* OttoKeyboardViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OttoKeyboardViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186DEF332019ABA70051E2CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		186DEF342019ABA70051E2CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,17 +28,8 @@
 		186DEF3F2019ABA70051E2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186DEF412019ABA70051E2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186DEF422019ABA70051E2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		186DEF4A2019ABDA0051E2CC /* KeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardButton.h; sourceTree = "<group>"; };
-		186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardButton.m; sourceTree = "<group>"; };
-		186DEF4C2019ABDA0051E2CC /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
-		186DEF4D2019ABDA0051E2CC /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
-		186DEF4E2019ABDA0051E2CC /* OttoKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoKeyboardView.h; sourceTree = "<group>"; };
-		186DEF4F2019ABDA0051E2CC /* OttoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoTextField.h; sourceTree = "<group>"; };
-		186DEF502019ABDA0051E2CC /* OttoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OttoTextField.m; sourceTree = "<group>"; };
-		186DEF512019ABDA0051E2CC /* OttoTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OttoTextView.h; sourceTree = "<group>"; };
-		186DEF522019ABDA0051E2CC /* OttoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OttoTextView.m; sourceTree = "<group>"; };
-		186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete@2x.png"; sourceTree = "<group>"; };
-		186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_delete@3x.png"; sourceTree = "<group>"; };
+		577364BBB0CD626E635E545A /* Pods_OttoKeyboardViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OttoKeyboardViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		851A873C3CCE8FE3651C80A6 /* Pods-OttoKeyboardViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OttoKeyboardViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OttoKeyboardViewDemo/Pods-OttoKeyboardViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38C0D912ACA7937ADCC7AD3 /* Pods_OttoKeyboardViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +47,10 @@
 		186DEF272019ABA70051E2CC = {
 			isa = PBXGroup;
 			children = (
-				186DEF492019ABDA0051E2CC /* OttoKeyboardView */,
 				186DEF322019ABA70051E2CC /* OttoKeyboardViewDemo */,
 				186DEF312019ABA70051E2CC /* Products */,
+				B30809F156769864533C3300 /* Pods */,
+				47CC6DDE18C9D75055B15343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,30 +78,21 @@
 			path = OttoKeyboardViewDemo;
 			sourceTree = "<group>";
 		};
-		186DEF492019ABDA0051E2CC /* OttoKeyboardView */ = {
+		47CC6DDE18C9D75055B15343 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				186DEF4A2019ABDA0051E2CC /* KeyboardButton.h */,
-				186DEF4B2019ABDA0051E2CC /* KeyboardButton.m */,
-				186DEF4C2019ABDA0051E2CC /* KeyboardView.h */,
-				186DEF4D2019ABDA0051E2CC /* KeyboardView.m */,
-				186DEF4E2019ABDA0051E2CC /* OttoKeyboardView.h */,
-				186DEF4F2019ABDA0051E2CC /* OttoTextField.h */,
-				186DEF502019ABDA0051E2CC /* OttoTextField.m */,
-				186DEF512019ABDA0051E2CC /* OttoTextView.h */,
-				186DEF522019ABDA0051E2CC /* OttoTextView.m */,
-				186DEF532019ABDA0051E2CC /* Resource */,
+				577364BBB0CD626E635E545A /* Pods_OttoKeyboardViewDemo.framework */,
 			);
-			path = OttoKeyboardView;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		186DEF532019ABDA0051E2CC /* Resource */ = {
+		B30809F156769864533C3300 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				186DEF542019ABDA0051E2CC /* keyboard_delete@2x.png */,
-				186DEF552019ABDA0051E2CC /* keyboard_delete@3x.png */,
+				851A873C3CCE8FE3651C80A6 /* Pods-OttoKeyboardViewDemo.debug.xcconfig */,
+				06391D2C146781F4DE13B94E /* Pods-OttoKeyboardViewDemo.release.xcconfig */,
 			);
-			path = Resource;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186DEF462019ABA70051E2CC /* Build configuration list for PBXNativeTarget "OttoKeyboardViewDemo" */;
 			buildPhases = (
+				1811DA6C40BF3F7B7B0D594B /* [CP] Check Pods Manifest.lock */,
 				186DEF2C2019ABA70051E2CC /* Sources */,
 				186DEF2D2019ABA70051E2CC /* Frameworks */,
 				186DEF2E2019ABA70051E2CC /* Resources */,
+				417586D383553EADDFC16F0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,27 +156,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				186DEF402019ABA70051E2CC /* LaunchScreen.storyboard in Resources */,
-				186DEF5B2019ABDA0051E2CC /* keyboard_delete@3x.png in Resources */,
 				186DEF3D2019ABA70051E2CC /* Assets.xcassets in Resources */,
-				186DEF5A2019ABDA0051E2CC /* keyboard_delete@2x.png in Resources */,
 				186DEF3B2019ABA70051E2CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1811DA6C40BF3F7B7B0D594B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OttoKeyboardViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		417586D383553EADDFC16F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OttoKeyboardViewDemo/Pods-OttoKeyboardViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OttoKeyboardView/OttoKeyboardView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OttoKeyboardView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OttoKeyboardViewDemo/Pods-OttoKeyboardViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		186DEF2C2019ABA70051E2CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186DEF562019ABDA0051E2CC /* KeyboardButton.m in Sources */,
 				186DEF382019ABA70051E2CC /* ViewController.m in Sources */,
-				186DEF592019ABDA0051E2CC /* OttoTextView.m in Sources */,
-				186DEF572019ABDA0051E2CC /* KeyboardView.m in Sources */,
 				186DEF432019ABA70051E2CC /* main.m in Sources */,
 				186DEF352019ABA70051E2CC /* AppDelegate.m in Sources */,
-				186DEF582019ABDA0051E2CC /* OttoTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +341,7 @@
 		};
 		186DEF472019ABA70051E2CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851A873C3CCE8FE3651C80A6 /* Pods-OttoKeyboardViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +356,7 @@
 		};
 		186DEF482019ABA70051E2CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06391D2C146781F4DE13B94E /* Pods-OttoKeyboardViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
