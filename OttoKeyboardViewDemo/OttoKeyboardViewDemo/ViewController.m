@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.hexTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.hexTextField setKeyboardType:KeyboardTypeNumber];
     [self.hexTextField setNumberKeyboardType:NumberKeyboardTypeHEX];
     self.hexTextField.textFieldClickReturnDelegate = self;
     
@@ -33,7 +33,7 @@
     self.numberTextField.placeholder = @"纯数字键盘";
     self.numberTextField.borderStyle = UITextBorderStyleLine;
     self.numberTextField.clearButtonMode = UITextFieldViewModeAlways;
-    [self.numberTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.numberTextField setKeyboardType:KeyboardTypeNumber];
     [self.numberTextField setNumberKeyboardType:NumberKeyboardTypeNumber];
     [self.view addSubview:self.numberTextField];
     
@@ -41,7 +41,7 @@
     self.doubleTextField.placeholder = @"小数点键盘";
     self.doubleTextField.borderStyle = UITextBorderStyleBezel;
     self.doubleTextField.clearButtonMode = UITextFieldViewModeAlways;
-    [self.doubleTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.doubleTextField setKeyboardType:KeyboardTypeNumber];
     [self.doubleTextField setNumberKeyboardType:NumberKeyboardTypeDouble];
     [self.view addSubview:self.doubleTextField];
     
@@ -49,7 +49,7 @@
     self.certNoTextField.placeholder = @"身份证键盘";
     self.certNoTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.certNoTextField.clearButtonMode = UITextFieldViewModeAlways;
-    [self.certNoTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.certNoTextField setKeyboardType:KeyboardTypeNumber];
     [self.certNoTextField setNumberKeyboardType:NumberKeyboardTypeCertNo];
     [self.view addSubview:self.certNoTextField];
     
@@ -59,7 +59,7 @@
     self.hexTextView.layer.borderWidth = 1;
     self.hexTextView.layer.cornerRadius =5;
     self.hexTextView.textViewClickReturnDelegate = self;
-    [self.hexTextView setOttoKeyboardType:TextViewKeyboardTypeNumber];
+    [self.hexTextView setTextViewKeyboardType:TextViewKeyboardTypeNumber];
     [self.hexTextView setNumberKeyboardType:NumberKeyboardTypeHEX];
     [self.view addSubview:self.hexTextView];
     
@@ -67,7 +67,7 @@
     self.randomTextField.placeholder = @"安全键盘";
     self.randomTextField.borderStyle = UITextBorderStyleBezel;
     //    [self.randomTextField setSecureTextEntry:YES];
-    [self.randomTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.randomTextField setKeyboardType:KeyboardTypeNumber];
     self.randomTextField.textFieldClickReturnDelegate = self;
     self.randomTextField.delegate = self;
     [self.randomTextField setNumberKeyboardType:NumberKeyboardTypeRandom];
@@ -108,7 +108,7 @@
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
-    [self.randomTextField setOttoKeyboardType:KeyboardTypeNumber];
+    [self.randomTextField setKeyboardType:KeyboardTypeNumber];
     [self.randomTextField setNumberKeyboardType:NumberKeyboardTypeRandom];
 }
 
